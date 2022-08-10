@@ -27,6 +27,10 @@ class Country extends Model
         return $this->belongsToMany(Language::class, 'country_languages', 'country_id', 'language_id');
      }
 
+     public function continente(){
+        return $this->BelongsTo(Continent::class, 'continent_id');
+    }
+
 
     use HasFactory;
 }

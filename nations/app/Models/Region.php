@@ -22,10 +22,6 @@ class Region extends Model
         return $this->hasMany(Country::class, 'region_id');
     }
 
-    //relacion entre region y continente
-    public function continente(){
-        return $this->belongsTo(Continent::class, 'continent_id');
-    }
 
 
     use HasFactory;
